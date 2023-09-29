@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+<style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+<style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css" rel="stylesheet"/>
+<meta content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<style>
+                #map_0d474caa4edebeaf8b95bddde252fa67 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+</head>
+<body>
+<div class="folium-map" id="map_0d474caa4edebeaf8b95bddde252fa67"></div>
+
+<!-- Start of Floating Box -->
+<div style="
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background-color: white;
+    font-size: 14px;
+    padding: 14px 16px 14px 16px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+">
+    Information accurate as of 28.09.2023, sourced from Nio Norway
+</div>
+<!-- End of Floating Box -->
+</body>
+<script>
+    
+    
+            var map_0d474caa4edebeaf8b95bddde252fa67 = L.map(
+                "map_0d474caa4edebeaf8b95bddde252fa67",
+                {
+                    center: [60.472, 8.4689],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dd3771188c71e4d1eff56aafc9aade0a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var marker_8d17a82a94f983581a0a840b8985948d = L.marker(
+                [59.765954, 10.258259],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_792602b2d6f8205106a8ab8d5ca30a14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8d17a82a94f983581a0a840b8985948d.setIcon(icon_792602b2d6f8205106a8ab8d5ca30a14);
+        
+    
+        var popup_5c0627afbfd3ffd37fdb080cda9a16cd = L.popup({"maxWidth": "140px"});
+
+        
+            var html_3fad5d4223f7cb9696ec41de6878b622 = $(`<div id="html_3fad5d4223f7cb9696ec41de6878b622" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 140px;'>         <div style='font-weight: bold;'>NIO Swap Lier</div>         <div style='padding-bottom: 0px;'>Operational</div>         <div></div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_5c0627afbfd3ffd37fdb080cda9a16cd.setContent(html_3fad5d4223f7cb9696ec41de6878b622);
+        
+
+        marker_8d17a82a94f983581a0a840b8985948d.bindPopup(popup_5c0627afbfd3ffd37fdb080cda9a16cd)
+        ;
+
+        
+    
+    
+            var marker_352a0903c06c8fe2af93941016e8ed6e = L.marker(
+                [59.62363, 10.738784],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_15f757173034d643606b49f5bad97b25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_352a0903c06c8fe2af93941016e8ed6e.setIcon(icon_15f757173034d643606b49f5bad97b25);
+        
+    
+        var popup_6fefa1069daeb7e4dbac1c3c3296e7c4 = L.popup({"maxWidth": "140px"});
+
+        
+            var html_fb946ca6fd2ec5cf28e12f061f7f4d6f = $(`<div id="html_fb946ca6fd2ec5cf28e12f061f7f4d6f" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 140px;'>         <div style='font-weight: bold;'>NIO Swap Vestby</div>         <div style='padding-bottom: 0px;'>Operational</div>         <div></div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_6fefa1069daeb7e4dbac1c3c3296e7c4.setContent(html_fb946ca6fd2ec5cf28e12f061f7f4d6f);
+        
+
+        marker_352a0903c06c8fe2af93941016e8ed6e.bindPopup(popup_6fefa1069daeb7e4dbac1c3c3296e7c4)
+        ;
+
+        
+    
+    
+            var marker_d99d8a55c834382c3ae3a398142d661d = L.marker(
+                [61.129778, 10.435244],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_40e6b79281c06a1b315474085f95e490 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d99d8a55c834382c3ae3a398142d661d.setIcon(icon_40e6b79281c06a1b315474085f95e490);
+        
+    
+        var popup_5633e678341a4cdfe3eab460ee03d06a = L.popup({"maxWidth": "140px"});
+
+        
+            var html_c3cb117f67ebb460cfeff3c26cd1d253 = $(`<div id="html_c3cb117f67ebb460cfeff3c26cd1d253" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 140px;'>         <div style='font-weight: bold;'>NIO Swap Lillehammer</div>         <div style='padding-bottom: 0px;'>Operational</div>         <div></div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_5633e678341a4cdfe3eab460ee03d06a.setContent(html_c3cb117f67ebb460cfeff3c26cd1d253);
+        
+
+        marker_d99d8a55c834382c3ae3a398142d661d.bindPopup(popup_5633e678341a4cdfe3eab460ee03d06a)
+        ;
+
+        
+    
+    
+            var marker_318c77ef9144a52463b1bea429d4882a = L.marker(
+                [58.94492, 5.72621],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_9727e267553279a5c741c48a4747f012 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_318c77ef9144a52463b1bea429d4882a.setIcon(icon_9727e267553279a5c741c48a4747f012);
+        
+    
+        var popup_e361b1d409fadd797c3f6ae526d8fdad = L.popup({"maxWidth": "140px"});
+
+        
+            var html_e0a0016b4df20b045187910f998df74d = $(`<div id="html_e0a0016b4df20b045187910f998df74d" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 140px;'>         <div style='font-weight: bold;'>NIO Swap Stavanger</div>         <div style='padding-bottom: 0px;'>Operational</div>         <div></div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_e361b1d409fadd797c3f6ae526d8fdad.setContent(html_e0a0016b4df20b045187910f998df74d);
+        
+
+        marker_318c77ef9144a52463b1bea429d4882a.bindPopup(popup_e361b1d409fadd797c3f6ae526d8fdad)
+        ;
+
+        
+    
+    
+            var marker_e42df09fd6b893cd2991528afd98b29f = L.marker(
+                [60.07907, 11.14969],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_71a382d658b77c362a8d83eafa746142 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e42df09fd6b893cd2991528afd98b29f.setIcon(icon_71a382d658b77c362a8d83eafa746142);
+        
+    
+        var popup_df7c97c165d819a73620835357aa2803 = L.popup({"maxWidth": "140px"});
+
+        
+            var html_03725aaafb1ad43801a6d8481a4fc92f = $(`<div id="html_03725aaafb1ad43801a6d8481a4fc92f" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 140px;'>         <div style='font-weight: bold;'>NIO Swap Kløfta</div>         <div style='padding-bottom: 0px;'>Operational</div>         <div></div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_df7c97c165d819a73620835357aa2803.setContent(html_03725aaafb1ad43801a6d8481a4fc92f);
+        
+
+        marker_e42df09fd6b893cd2991528afd98b29f.bindPopup(popup_df7c97c165d819a73620835357aa2803)
+        ;
+
+        
+    
+    
+            var marker_8cedc77e93002d9fd16ed66d5dac5b51 = L.marker(
+                [60.584309, 9.98456],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_8d2996eb747cb79fbf8b5e9d09494f84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8cedc77e93002d9fd16ed66d5dac5b51.setIcon(icon_8d2996eb747cb79fbf8b5e9d09494f84);
+        
+    
+        var popup_66a71a4fd20b975f7dfdfe1f74a17a1f = L.popup({"maxWidth": "240px"});
+
+        
+            var html_f86d32c69157bd984c68894599b513dd = $(`<div id="html_f86d32c69157bd984c68894599b513dd" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 240px;'>         <div style='font-weight: bold;'>NIO Swap Valdresporten</div>         <div style='padding-bottom: 4px;'>Under construction</div>         <div>The station is fully constructed, and it is now undergoing final testing. We expect the battery exchange station to open at the end of October.</div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_66a71a4fd20b975f7dfdfe1f74a17a1f.setContent(html_f86d32c69157bd984c68894599b513dd);
+        
+
+        marker_8cedc77e93002d9fd16ed66d5dac5b51.bindPopup(popup_66a71a4fd20b975f7dfdfe1f74a17a1f)
+        ;
+
+        
+    
+    
+            var marker_92095e975bef371636175326650007db = L.marker(
+                [58.17637, 8.13803],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_fa7b33210d77222287d9db2a01a38c1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_92095e975bef371636175326650007db.setIcon(icon_fa7b33210d77222287d9db2a01a38c1f);
+        
+    
+        var popup_4b0ef3596ee124e5e90e0394b3a7e1fb = L.popup({"maxWidth": "240px"});
+
+        
+            var html_f21052a8cef5cf92ecfde7a71da10a45 = $(`<div id="html_f21052a8cef5cf92ecfde7a71da10a45" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 240px;'>         <div style='font-weight: bold;'>NIO Swap Kristiansand</div>         <div style='padding-bottom: 4px;'>Under construction</div>         <div>The station is fully constructed, but some crucial parts need to be replaced before the battery exchange station can be tested and opened. We expect the battery exchange station to open sometime in November.</div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_4b0ef3596ee124e5e90e0394b3a7e1fb.setContent(html_f21052a8cef5cf92ecfde7a71da10a45);
+        
+
+        marker_92095e975bef371636175326650007db.bindPopup(popup_4b0ef3596ee124e5e90e0394b3a7e1fb)
+        ;
+
+        
+    
+    
+            var marker_f717cdeee2f9b7237084dc1b2c610f0a = L.marker(
+                [60.63263, 11.302214],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_3c9f11411723de53b43a1399537c9e4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f717cdeee2f9b7237084dc1b2c610f0a.setIcon(icon_3c9f11411723de53b43a1399537c9e4e);
+        
+    
+        var popup_c9cd8d92b511d53160a31040d7e7d1d3 = L.popup({"maxWidth": "240px"});
+
+        
+            var html_812dd25de9d18b7f695dcec18bf055da = $(`<div id="html_812dd25de9d18b7f695dcec18bf055da" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 240px;'>         <div style='font-weight: bold;'>NIO Swap Innlandsporten</div>         <div style='padding-bottom: 4px;'>Under construction</div>         <div>Construction began on September 11th. We expect the battery exchange station to open by the end of the year. This will likely be Norway's first PSS 3.0 (our latest type of battery exchange station).</div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_c9cd8d92b511d53160a31040d7e7d1d3.setContent(html_812dd25de9d18b7f695dcec18bf055da);
+        
+
+        marker_f717cdeee2f9b7237084dc1b2c610f0a.bindPopup(popup_c9cd8d92b511d53160a31040d7e7d1d3)
+        ;
+
+        
+    
+    
+            var marker_21ddb3dc5705a7814f882a8442b5f21a = L.marker(
+                [60.697597, 8.953689],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_c460b3e376c95d37d0d63c1a4857d3fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_21ddb3dc5705a7814f882a8442b5f21a.setIcon(icon_c460b3e376c95d37d0d63c1a4857d3fc);
+        
+    
+        var popup_77a1a23e0ac1cd2a5189884fed04b7e2 = L.popup({"maxWidth": "240px"});
+
+        
+            var html_4231fadce40ce29abd84f9d526dbdacb = $(`<div id="html_4231fadce40ce29abd84f9d526dbdacb" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 240px;'>         <div style='font-weight: bold;'>NIO Swap Gol</div>         <div style='padding-bottom: 4px;'>Under construction</div>         <div>Construction began on September 26th. We expect the battery exchange station to open by the end of the year.</div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_77a1a23e0ac1cd2a5189884fed04b7e2.setContent(html_4231fadce40ce29abd84f9d526dbdacb);
+        
+
+        marker_21ddb3dc5705a7814f882a8442b5f21a.bindPopup(popup_77a1a23e0ac1cd2a5189884fed04b7e2)
+        ;
+
+        
+    
+    
+            var marker_fb01f00a760e1fcd129600ea3a72f6a6 = L.marker(
+                [59.516892, 8.647809],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_799399989736f33e9089e427bd6b3881 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_fb01f00a760e1fcd129600ea3a72f6a6.setIcon(icon_799399989736f33e9089e427bd6b3881);
+        
+    
+        var popup_5b1d90336307f60e4dbb197e241b091f = L.popup({"maxWidth": "240px"});
+
+        
+            var html_24873b742feb2844b32961ef3dbbf6a8 = $(`<div id="html_24873b742feb2844b32961ef3dbbf6a8" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 240px;'>         <div style='font-weight: bold;'>NIO Swap Seljord</div>         <div style='padding-bottom: 4px;'>Planning</div>         <div>All preparations are completed, and we are ready to start the construction. We expect the work to begin sometime in October.</div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_5b1d90336307f60e4dbb197e241b091f.setContent(html_24873b742feb2844b32961ef3dbbf6a8);
+        
+
+        marker_fb01f00a760e1fcd129600ea3a72f6a6.bindPopup(popup_5b1d90336307f60e4dbb197e241b091f)
+        ;
+
+        
+    
+    
+            var marker_0ccacc939cb787e2d83f3f1c51ec4d84 = L.marker(
+                [60.356036, 5.127759],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_eff428af5a5f7c2cb80eb3f48a20b3e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_0ccacc939cb787e2d83f3f1c51ec4d84.setIcon(icon_eff428af5a5f7c2cb80eb3f48a20b3e8);
+        
+    
+        var popup_f560e107504c54b1f987c78c04f06a5a = L.popup({"maxWidth": "240px"});
+
+        
+            var html_a11e79f58093d632fb30088709723122 = $(`<div id="html_a11e79f58093d632fb30088709723122" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 240px;'>         <div style='font-weight: bold;'>NIO Swap Bergen-Vest</div>         <div style='padding-bottom: 4px;'>Planning</div>         <div>All preparations are completed, and we are ready to start the construction. We expect the work to begin sometime in November.</div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_f560e107504c54b1f987c78c04f06a5a.setContent(html_a11e79f58093d632fb30088709723122);
+        
+
+        marker_0ccacc939cb787e2d83f3f1c51ec4d84.bindPopup(popup_f560e107504c54b1f987c78c04f06a5a)
+        ;
+
+        
+    
+    
+            var marker_4c4e331e3d61764d205d6dd77529c0cd = L.marker(
+                [63.423187, 10.534697],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_b9a41ebfcd6b7a5b9d0470a35bc361b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_4c4e331e3d61764d205d6dd77529c0cd.setIcon(icon_b9a41ebfcd6b7a5b9d0470a35bc361b2);
+        
+    
+        var popup_7e15de64f5aaacb74a7d57f8e15618f5 = L.popup({"maxWidth": "240px"});
+
+        
+            var html_33ebbf3a94f875a20ecd0551be7903af = $(`<div id="html_33ebbf3a94f875a20ecd0551be7903af" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 240px;'>         <div style='font-weight: bold;'>NIO Swap Trondheim</div>         <div style='padding-bottom: 4px;'>Planning</div>         <div>Delays have occurred due to concerns about quick clay in the area. We have been re-designing the project and are now obtaining prices from the contractor</div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_7e15de64f5aaacb74a7d57f8e15618f5.setContent(html_33ebbf3a94f875a20ecd0551be7903af);
+        
+
+        marker_4c4e331e3d61764d205d6dd77529c0cd.bindPopup(popup_7e15de64f5aaacb74a7d57f8e15618f5)
+        ;
+
+        
+    
+    
+            var marker_5dcd4fed5718d2747f566f83ec1b7346 = L.marker(
+                [60.474891, 5.337396],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_86de3151dd5750954294708f3377b06d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_5dcd4fed5718d2747f566f83ec1b7346.setIcon(icon_86de3151dd5750954294708f3377b06d);
+        
+    
+        var popup_33427c6f1b854861ff43cb68fe70da6b = L.popup({"maxWidth": "240px"});
+
+        
+            var html_ccd95eb969aab0a08609cc8ba194e9d6 = $(`<div id="html_ccd95eb969aab0a08609cc8ba194e9d6" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 240px;'>         <div style='font-weight: bold;'>NIO Swap Bergen-Nord</div>         <div style='padding-bottom: 4px;'>Planning</div>         <div>The building application is being processed by Bergen municipality. Construction can begin as soon as the building permit is granted.</div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_33427c6f1b854861ff43cb68fe70da6b.setContent(html_ccd95eb969aab0a08609cc8ba194e9d6);
+        
+
+        marker_5dcd4fed5718d2747f566f83ec1b7346.bindPopup(popup_33427c6f1b854861ff43cb68fe70da6b)
+        ;
+
+        
+    
+    
+            var marker_366a70f5a5da6b08eb8980935a1eb284 = L.marker(
+                [62.11499, 10.61683],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_346ed1919f64216a581ec1edd008dbd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_366a70f5a5da6b08eb8980935a1eb284.setIcon(icon_346ed1919f64216a581ec1edd008dbd3);
+        
+    
+        var popup_2bb7a2663fc72d723a47839938010441 = L.popup({"maxWidth": "240px"});
+
+        
+            var html_562673d9de09d394d11665013dc4be36 = $(`<div id="html_562673d9de09d394d11665013dc4be36" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 240px;'>         <div style='font-weight: bold;'>NIO Swap Alvdal</div>         <div style='padding-bottom: 4px;'>Planning</div>         <div>The building application is being processed by Alvdal municipality. Construction can begin as soon as the building permit is granted.</div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_2bb7a2663fc72d723a47839938010441.setContent(html_562673d9de09d394d11665013dc4be36);
+        
+
+        marker_366a70f5a5da6b08eb8980935a1eb284.bindPopup(popup_2bb7a2663fc72d723a47839938010441)
+        ;
+
+        
+    
+    
+            var marker_07fc5d71134a729ef02d38604781b313 = L.marker(
+                [62.520365, 6.915261],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_93a38601148615c70119271baeea85e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_07fc5d71134a729ef02d38604781b313.setIcon(icon_93a38601148615c70119271baeea85e7);
+        
+    
+        var popup_3e4366efb278d0c892664e4c0bfdf3f4 = L.popup({"maxWidth": "240px"});
+
+        
+            var html_fb31091ca380bfe2add3c358206b31fb = $(`<div id="html_fb31091ca380bfe2add3c358206b31fb" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 240px;'>         <div style='font-weight: bold;'>NIO Swap Ålesund</div>         <div style='padding-bottom: 4px;'>Contract signed</div>         <div>The building application is being processed by Ålesund municipality, and we are working on obtaining prices from the contractor.</div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_3e4366efb278d0c892664e4c0bfdf3f4.setContent(html_fb31091ca380bfe2add3c358206b31fb);
+        
+
+        marker_07fc5d71134a729ef02d38604781b313.bindPopup(popup_3e4366efb278d0c892664e4c0bfdf3f4)
+        ;
+
+        
+    
+    
+            var marker_c18917619a86d622930ea3432629b708 = L.marker(
+                [59.307836, 10.361795],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_f1034c94d1bb4edae408048215e6f05e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_c18917619a86d622930ea3432629b708.setIcon(icon_f1034c94d1bb4edae408048215e6f05e);
+        
+    
+        var popup_375270b204edd875d03c586794725a14 = L.popup({"maxWidth": "240px"});
+
+        
+            var html_1b1d97212f9d09fd18f33aa7953906b4 = $(`<div id="html_1b1d97212f9d09fd18f33aa7953906b4" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 240px;'>         <div style='font-weight: bold;'>NIO Swap Tønsberg</div>         <div style='padding-bottom: 4px;'>Contract signed</div>         <div>The building application is being processed by Tønsberg municipality, and we are working on obtaining prices from the contractor.</div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_375270b204edd875d03c586794725a14.setContent(html_1b1d97212f9d09fd18f33aa7953906b4);
+        
+
+        marker_c18917619a86d622930ea3432629b708.bindPopup(popup_375270b204edd875d03c586794725a14)
+        ;
+
+        
+    
+    
+            var marker_28868ba12665dc0935623cf94ef9cf40 = L.marker(
+                [59.297521, 11.062725],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_4e17e00c21a83021e23ba4fb2e505fea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_28868ba12665dc0935623cf94ef9cf40.setIcon(icon_4e17e00c21a83021e23ba4fb2e505fea);
+        
+    
+        var popup_b87a028e31c38358c40af957ce85a168 = L.popup({"maxWidth": "240px"});
+
+        
+            var html_e03ef864f961f55341f89a5e2ada24c5 = $(`<div id="html_e03ef864f961f55341f89a5e2ada24c5" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 240px;'>         <div style='font-weight: bold;'>NIO Swap Sarpsborg</div>         <div style='padding-bottom: 4px;'>Contract signed</div>         <div>The building application is being processed by Sarpsborg municipality, and we are working on obtaining prices from the contractor.</div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_b87a028e31c38358c40af957ce85a168.setContent(html_e03ef864f961f55341f89a5e2ada24c5);
+        
+
+        marker_28868ba12665dc0935623cf94ef9cf40.bindPopup(popup_b87a028e31c38358c40af957ce85a168)
+        ;
+
+        
+    
+    
+            var marker_811e0a9568456d6e2029e15f5d47e97b = L.marker(
+                [62.071368, 9.124117],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_577e4f124c417fef8f814c0d3c4cd181 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_811e0a9568456d6e2029e15f5d47e97b.setIcon(icon_577e4f124c417fef8f814c0d3c4cd181);
+        
+    
+        var popup_04b845aae46063041cddbcda635177a1 = L.popup({"maxWidth": "240px"});
+
+        
+            var html_8db311c26acb6ed06976e8113a08c7b1 = $(`<div id="html_8db311c26acb6ed06976e8113a08c7b1" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 240px;'>         <div style='font-weight: bold;'>NIO Swap Dombås</div>         <div style='padding-bottom: 4px;'>Contract signed</div>         <div>The building application is being processed by Dombås municipality, and we are working on obtaining prices from the contractor.</div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_04b845aae46063041cddbcda635177a1.setContent(html_8db311c26acb6ed06976e8113a08c7b1);
+        
+
+        marker_811e0a9568456d6e2029e15f5d47e97b.bindPopup(popup_04b845aae46063041cddbcda635177a1)
+        ;
+
+        
+    
+    
+            var marker_781141719bd80fd2013baff4b9911af7 = L.marker(
+                [58.971052, 9.513705],
+                {}
+            ).addTo(map_0d474caa4edebeaf8b95bddde252fa67);
+        
+    
+            var icon_c9b881f83bc19b165b7240f188c885e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_781141719bd80fd2013baff4b9911af7.setIcon(icon_c9b881f83bc19b165b7240f188c885e6);
+        
+    
+        var popup_dba826f921593946b27cb56bce64a4f2 = L.popup({"maxWidth": "240px"});
+
+        
+            var html_ec90601ca5a3fd4f9ac43b07e604f3b2 = $(`<div id="html_ec90601ca5a3fd4f9ac43b07e604f3b2" style="width: 100.0%; height: 100.0%;">     <!-- Start of Popup Content -->     <div style='font-size: 14px; width: 240px;'>         <div style='font-weight: bold;'>NIO Swap Bamble</div>         <div style='padding-bottom: 4px;'>Contract signed</div>         <div>We have received the framework permit, and we are working to clarify the power situation in the area. There are many major players wanting electricity in this area, and there are currently challenges with future capacity in the grid.</div>     </div>     <!-- End of Popup Content -->     </div>`)[0];
+            popup_dba826f921593946b27cb56bce64a4f2.setContent(html_ec90601ca5a3fd4f9ac43b07e604f3b2);
+        
+
+        marker_781141719bd80fd2013baff4b9911af7.bindPopup(popup_dba826f921593946b27cb56bce64a4f2)
+        ;
+
+        
+    
+</script>
+</html>
